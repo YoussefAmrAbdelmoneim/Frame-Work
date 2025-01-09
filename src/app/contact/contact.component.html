@@ -1,0 +1,64 @@
+<div class="contact mb-4">
+  <h2 class="text-uppercase pt-5 text-center">contact section</h2>
+  <app-dark-star></app-dark-star>
+  <div class="w-50 p-4 mx-auto mt-5">
+    <form>
+      @if(labelShowName) {
+      <label
+        for="userName"
+        class="position-relative top-40 text-start bg" [class.top-40]="!showLabelName" >userName :</label
+      >
+      }
+      <input
+        (input)="showLabelName($event)"
+        type="text"
+        id="userName"
+        class="form-control border-0 border-bottom py-3 position-relative"
+        placeholder="userName"
+      />
+      @if(labelShowAge) {
+      <label
+        for="userAge"
+        class="position-relative top-40 text-start bg" [class.top-40]="!showLabelName"
+        >userAge :</label
+      >
+      }
+      <input
+        type="text"
+        (input)="showLabelAge($event)"
+        id="userAge"
+        class="form-control border-0 border-bottom py-4 position-relative"
+        placeholder="userAge"
+      />
+      @if(labelShowEmail) {
+      <label
+        for="userEmail"
+        class="position-relative top-40 text-start bg" [class.top-40]="!showLabelName"
+        >userEmail :</label
+      >
+      }
+      <input
+        type="text"
+        (input)="showLabelEmail($event)"
+        id="userEmail"
+        class="form-control border-0 border-bottom py-4 position-relative"
+        placeholder="userEmail"
+      />
+      @if(labelShowPassword) {
+      <label
+        for="userPassword"
+        class="position-relative top-40 text-start bg" [class.top-40]="!showLabelName"
+        >userPassword :</label
+      >
+      }
+      <input
+        type="text"
+        (input)="showLabelPassword($event)"
+        id="userPassword"
+        class="form-control border-0 border-bottom py-4 position-relative"
+        placeholder="userPassword"
+      />
+    </form>
+    <button class="btn mt-4 text-white">send Message</button>
+  </div>
+</div>

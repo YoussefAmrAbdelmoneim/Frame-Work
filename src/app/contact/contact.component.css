@@ -1,0 +1,37 @@
+.contact
+{
+    background-color: white;
+margin-top: 82px;
+    min-height: calc(-102px + 100vh);
+}
+.contact h2 
+{
+    color:#2C3E50;
+    font-weight: 700;
+    font-size:40px;
+}
+.btn 
+{
+    background-color: #1abc9c;
+}
+input:focus
+{
+    box-shadow: none;
+}
+.btn:focus
+{
+    background-color: #1abc9c;
+}
+.bg
+{
+    color: #1abc9c;
+    margin-bottom: 7px;
+}
+label {
+    transition: top 0.6s !important;
+  }
+.top-40
+{
+    position: relative !important;
+    top:40px !important;
+}

@@ -1,0 +1,31 @@
+.portfolio
+{
+    background-color: white;
+margin-top: 82px;
+    min-height: calc(-102px + 100vh);
+}
+.portfolio h2 
+{
+    color:#2C3E50;
+    font-weight: 700;
+    font-size: 40px;
+}
+.layer
+{
+    background-color: #1abc9ce6;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6s opacity;
+}
+.parent:hover .layer
+{
+    opacity: 90%;
+}
+.modal img
+{
+    width: 600px;
+}
+.z-9999
+{
+    z-index: 9999;
+}

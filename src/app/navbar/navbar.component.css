@@ -1,0 +1,26 @@
+.nav-link-properties
+{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+}
+.logo-properties
+{
+    font-size: 32px !important;
+    font-weight: 700;
+    margin:0px 16px 0px 0px;
+    padding: 5px 0px;
+}
+.navbar
+{
+    background-color: #2c3e50;   
+     transition: padding 0.6s;
+}
+.bg 
+{
+    background-color: #1ABC9C;
+}
+  .py-10px
+  {
+    padding: 10px !important;
+  }

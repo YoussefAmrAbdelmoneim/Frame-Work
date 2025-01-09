@@ -1,0 +1,11 @@
+.about
+{
+    background-color: #1abc9c;
+    margin-top: 86px;
+    min-height: calc(-106px + 100vh);
+}
+.about h2
+{
+    font-size: 40px;
+    font-weight: 700;
+}

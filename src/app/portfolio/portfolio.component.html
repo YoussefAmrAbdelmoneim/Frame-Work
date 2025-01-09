@@ -1,0 +1,48 @@
+<div class="portfolio text-center mb-4">
+  <h2 class="text-uppercase pt-5">portfolio component</h2>
+  <app-dark-star></app-dark-star>
+  <div class="images">
+    <div class="container">
+      <div class="row g-5">
+        @for (image of images; track $index) {
+        <div class="col-md-6 col-lg-4">
+          <div class="parent position-relative" (click)="modalShow(image)">
+            <img [src]="image" class="w-100 rounded rounded-3" alt="" />
+            <div
+              class="layer position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center"
+            >
+              <i
+                _ngcontent-uuw-c19=""
+                class="text-white fa-solid fa-plus fa-6x"
+              ></i>
+            </div>
+          </div>
+        </div>
+        } 
+        @for (image of images; track $index) {
+        <div class="col-md-6 col-lg-4">
+          <div class="parent position-relative" (click)="modalShow(image)">
+            <img [src]="image" class="w-100 rounded rounded-3" alt="" />
+            <div
+              class="layer position-absolute start-0 top-0 end-0 bottom-0 d-flex justify-content-center align-items-center"
+            >
+              <i
+                _ngcontent-uuw-c19=""
+                class="text-white fa-solid fa-plus fa-6x"
+              ></i>
+            </div>
+          </div>
+        </div>
+       }
+      </div>
+      @if(showModal) {
+        <div
+          (click)="modalHide()"
+          class="modal position-fixed d-flex justify-content-center align-items-center start-0 top-0 end-0 bottom-0 bg-primary h-100 bg-opacity-25 z-9999"
+        >
+          <img [src]="photo" alt="" (click)="$event.stopPropagation()" />
+        </div>
+        }
+    </div>
+  </div>
+</div>
